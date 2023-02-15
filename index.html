@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css">
 	<title>Document</title>
 </head>
-<body>
 
+<body>
+	<header>
+		<nav class="navigation">
+			<div class="logo"><a href="#"> <img src="Images/logo/Booki.png" alt="Booki"> </a></div>
+			<div class="links">
+				<ul>
+					<li><a href="#">Hébergement</a></li>
+					<li><a href="#">Activités</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="search">
+			<h3>Trouvez votre hebergement pour des vacances de reve</h3>
+			<h4>En plein centre-ville ou en pleine nature</h4>
+		</div>
+		<div class="search-container">
+			<button class="location-btn"><i class="fa fa-solid fa-location-dot"></i></button>
+			<input type="text" placeholder="Marseille, France">
+			<button class="search-btn" type="submit">Recherche</button>
+		</div>
+		<div class="filters">
+			<ul>
+				<li>
+					Filtres
+				</li>
+				<li>
+					<button class="economic btn">Economic</button>
+				</li>
+				<li>
+					<button class="family btn">Familial</button>
+				</li>
+				<li>
+					<button class="romantic btn">Romantic</button>
+				</li>
+				<li>
+					<button class="pets btn">Animaux autorises</button>
+				</li>
+			</ul>
+		</div>
+	</main>
 </body>
+
 </html>
