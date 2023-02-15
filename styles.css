@@ -8,9 +8,15 @@ html *{
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 }
+
 body {
+	width: 1440px;
 	max-width: 80%;
-	margin: 0 auto;
+	margin: 50px auto;
+}
+
+.page-wrapper{
+	padding: 50px;
 }
 
 .logo img{
@@ -110,10 +116,14 @@ input::placeholder{
 	border-bottom-right-radius: 15px;
 }
 
+.filters{
+	display: flex;
+	flex-flow: row wrap;
+}
 .filters ul{
 	font-family: 'Raleway' , sans-serif;
 	font-weight: 700;
-	max-width: 60%;
+	max-width: 75%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -251,4 +261,117 @@ background-color: #DEEBFF;
 	font-weight: 700;
 	padding-left: 10px;
 	padding-top: 20px;
+}
+
+.popular-image{
+	width: 137;
+	height: 144px;
+	object-fit: cover;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.popular-box{
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin: 10px;
+	box-shadow: 1px 1px 2px 1px rgba(82, 82, 82, 0.1);
+}
+
+.popular{
+	box-sizing: border-box;
+	border-radius: 20px;
+	background-color: #F2F2F2 ;
+	width: 420px;
+	padding: 20px;
+}
+
+.popular-image img{
+	width: 137px;
+	height: 144px;
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.right-side{
+	background-color: #F2F2F2;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.results{
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular-box{
+	display: flex;
+	flex-flow: row;
+
+}
+
+.popular-content ul{
+	display: flex;
+	color: #0065FC;
+	margin-top: 50px;
+	margin-left: 15px;
+	margin-bottom: 0;
+	list-style: none;
+	padding-left: 10px;
+}
+
+.popular-content h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.popular-content h4{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.most-popular{
+	display: flex;
+	width: 343px;
+	justify-content: space-between;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.most-popular li:first-child{
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.most-popular .fa-chart-line{
+	color: #0065FC;
+	font-size: 22px;
+}
+
+.activity-card{
+	display: flex;
+	flex-flow: column;
+	width: 302px;
+
+}
+
+.activity-image img{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	max-width: 302px;
+	height: 309px;
+	object-fit: cover;
 }
