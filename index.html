@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="styles.css">
 	<title>Document</title>
 </head>
@@ -17,7 +17,7 @@
 		<header>
 			<nav class="navigation">
 				<div class="logo"><a href="#"> <img src="Images/logo/Booki.png" alt="Booki"> </a></div>
-				<div class="links">
+				<div class="links" aria-haspopup="true">
 					<ul>
 						<li><a href="#">Hébergement</a></li>
 						<li><a href="#">Activités</a></li>
@@ -33,13 +33,14 @@
 			<div class="search-container">
 				<button class="location-btn"><i class="fa fa-solid fa-location-dot"></i></button>
 				<input type="text" placeholder="Marseille, France">
-				<button class="search-btn" type="submit">Rechercher</button>
+				<div class="search-btn">
+					<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+					<span class="btn">Rechercher</span>
+				</div>
 			</div>
 			<div class="filters">
+				<p>Filtres</p>
 				<ul>
-					<li>
-						Filtres
-					</li>
 					<li>
 						<button class="economic btn"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
 					</li>
@@ -56,7 +57,8 @@
 
 			</div>
 			<div class="info">
-				<p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponible dans cette ville</p>
+				<div><i class="fa-solid fa-info"></i></div>
+				<p>Plus de 500 logements sont disponible dans cette ville</p>
 			</div>
 			<div class="results">
 				<div class="accomodations">
@@ -236,8 +238,10 @@
 									alt="image">
 							</div>
 							<div class="popular-content">
-								<h3>Hôtel Le soleil du matin</h3>
-								<h4>Nuit à partir de 128&euro;</h4>
+								<div class="content-headers">
+									<h3>Hôtel Le soleil du matin</h3>
+									<h4>Nuit à partir de 128&euro;</h4>
+								</div>
 								<ul class="stars">
 									<li>
 										<i class="fa-solid fa-star"></i>
@@ -262,8 +266,10 @@
 								<img src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image">
 							</div>
 							<div class="popular-content">
-								<h3>Chambres d&#39;hôtes Au cœur de l&#39;eau</h3>
-								<h4>Nuit à partir de 128&euro;</h4>
+								<div class="content-headers">
+									<h3>Chambres d&#39;hôtes Au cœur de l&#39;eau</h3>
+									<h4>Nuit à partir de 128&euro;</h4>
+								</div>
 								<ul class="stars">
 									<li>
 										<i class="fa-solid fa-star"></i>
@@ -289,8 +295,10 @@
 									alt="image">
 							</div>
 							<div class="popular-content">
-								<h3>Hôtel Le soleil du matin</h3>
-								<h4>Nuit à partir de 128&euro;</h4>
+								<div class="content-headers">
+									<h3>Hôtel Bleu et Blanc</h3>
+									<h4>Nuit à partir de 68&euro;</h4>
+								</div>
 								<ul class="stars">
 									<li>
 										<i class="fa-solid fa-star"></i>
@@ -313,7 +321,7 @@
 					</div>
 				</div>
 			</div>
-			<h2>Activités a Marseille</h2>
+			<h2 class="activity-h2">Activités à Marseille</h2>
 			<div class="activities">
 				<div class="activity-card">
 					<div class="activity-image">
@@ -348,7 +356,34 @@
 					</div>
 				</div>
 			</div>
-	</main>
+		</main>
+
+		<footer>
+			<section class="footer-container">
+				<div class="fbox">
+					<h3>À propos</h3>
+					<ul>
+						<li><a href="#">Fonctionnement du site</a></li>
+						<li><a href="#">Conditions générales </a></li>
+						<li><a href="#">Données et confidentialité</a></li>
+					</ul>
+				</div>
+				<div class="fbox">
+					<h3>Nos hébergements</h3>
+					<ul>
+						<li><a href="#">Charte qualité</a></li>
+						<li><a href="#">Proposer votre hôtel</a></li>
+					</ul>
+				</div>
+				<div class="fbox">
+					<h3>Assistance</h3>
+					<ul>
+						<li><a href="#">Centre d&#39;aide</a></li>
+						<li><a href="#">Nous contacter</a></li>
+					</ul>
+				</div>
+			</section>
+		</footer>
 	</div>
 </body>
 
