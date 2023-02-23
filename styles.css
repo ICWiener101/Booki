@@ -15,7 +15,7 @@ body {
 
 .page-wrapper {
 	margin: 0 auto;
-	max-width: 90rem;
+	max-width: 1400px;
 	padding: 10px;
 }
 
@@ -64,16 +64,23 @@ body {
 }
 
 .location-btn {
-	display: inline-block;
+	font-size: 1.125rem;
 	background-color: #F2F2F2;
 	padding: 0.938rem;
 	border: none;
 	margin-right: 0;
 	border-top-left-radius: 0.938rem;
 	border-bottom-left-radius: 0.938rem;
+	cursor: pointer;
+
 }
 
-input::placeholder {
+
+form {
+	display: flex;
+}
+
+form input::placeholder {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 1.125rem;
@@ -84,10 +91,11 @@ input::placeholder {
 .search-container {
 	display: flex;
 	flex-flow: row;
+	justify-content: flex-start;
 	margin-bottom: 2.5rem;
 }
 
-.search-container input {
+.search-container form input {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 1.125rem;
@@ -97,12 +105,14 @@ input::placeholder {
 	border: none;
 	border: 1px solid #F2F2F2;
 	border-right: none;
+	margin-left: 0;
 }
 
 .fa-location-dot {
 	font-size: 1.125rem;
 	width: 0.875rem;
 	height: 1.125rem;
+	margin-right: 0;
 }
 
 .search-btn {
@@ -115,9 +125,10 @@ input::placeholder {
 	border: none;
 	border-top-right-radius: 0.938rem;
 	border-bottom-right-radius: 0.938rem;
+	cursor: pointer;
 }
 
-.search-btn .fa-magnifying-glass {
+.fa-magnifying-glass {
 	display: none;
 }
 
@@ -158,9 +169,8 @@ input::placeholder {
 	padding: 0.625rem 0.938rem;
 	margin-left: 2.5rem;
 	text-align: center;
-
+	cursor: pointer;
 }
-
 
 .btn:hover {
 	background-color: #DEEBFF;
@@ -196,7 +206,7 @@ input::placeholder {
 	margin-right: 10px;
 }
 
-.accomodations {
+#accomodations {
 	box-sizing: border-box;
 	border-radius: 1.25rem;
 	background-color: #F2F2F2;
@@ -204,7 +214,7 @@ input::placeholder {
 	padding: 1.25rem;
 }
 
-.accomodations h2 {
+#accomodations h2 {
 	margin-bottom: 0;
 	padding-left: 0.625rem;
 	font-size: 1.375rem;
@@ -222,13 +232,39 @@ input::placeholder {
 }
 
 .result-box {
+	position: relative;
 	display: block;
 	width: 30%;
 	border-radius: 1.25rem;
 	background-color: #FFFFFF;
 	padding: 0.313rem;
-	margin: 0.625rem;
-	box-shadow: 0px -2px 1.25rem -13px rgba(145, 145, 145, 1);
+	margin-bottom: 20px;
+	box-shadow: 0px -2px 20px -13px rgba(145, 145, 145, 1);
+
+}
+
+.result-box:hover {
+	box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+}
+
+#accomodations a {
+	color: black;
+	text-decoration: none;
+	font-size: 1.125rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	padding-left: 10px;
+	padding-top: 1.25rem;
+}
+
+.content a::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
 }
 
 .left-side {
@@ -246,13 +282,13 @@ input::placeholder {
 	margin-top: 0;
 	padding-top: 0;
 	padding-bottom: 5px;
+	margin-left: 0.625rem;
 }
 
 .content h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
-	margin-left: 0.625rem;
 	margin-bottom: 5px;
 	margin-top: 0.625rem;
 }
@@ -261,9 +297,8 @@ input::placeholder {
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
-	margin-left: 0.625rem;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 5px;
 }
 
 .stars {
@@ -278,18 +313,6 @@ input::placeholder {
 
 .last-star {
 	color: #F2F2F2;
-}
-
-
-
-.accomodations a {
-	color: black;
-	text-decoration: none;
-	font-size: 1.125rem;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	padding-left: 0.625rem;
-	padding-top: 1.25rem;
 }
 
 .popular {
@@ -311,6 +334,7 @@ input::placeholder {
 }
 
 .popular-box {
+	position: relative;
 	display: flex;
 	flex-flow: row;
 	width: 100%;
@@ -318,6 +342,11 @@ input::placeholder {
 	padding: 5px;
 	background-color: #FFFFFF;
 	border-radius: 20px;
+	box-shadow: 0px -2px 20px -13px rgba(145, 145, 145, 1);
+}
+
+.popular-box:hover {
+	box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
 }
 
 .popular-image {
@@ -356,6 +385,26 @@ input::placeholder {
 	padding: 0;
 }
 
+.content-headers a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+
+}
+
+.popular-box a::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
 .content-headers h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1rem;
@@ -371,8 +420,6 @@ input::placeholder {
 	margin: 0;
 	padding: 0;
 }
-
-
 
 .results {
 	width: 100%;
@@ -398,6 +445,7 @@ input::placeholder {
 }
 
 .activity-card {
+	position: relative;
 	display: flex;
 	flex-flow: column;
 	align-self: stretch;
@@ -405,6 +453,10 @@ input::placeholder {
 	width: 24%;
 	border-radius: 1.25rem;
 	box-shadow: 1px 1px 2px 1px rgba(82, 82, 82, 0.1);
+}
+
+.activity-card:hover{
+	box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
 }
 
 .activity-image img {
@@ -415,7 +467,7 @@ input::placeholder {
 	object-fit: cover;
 }
 
-.activities {
+#activities {
 	display: flex;
 	justify-content: space-between;
 	align-content: stretch;
@@ -430,6 +482,19 @@ input::placeholder {
 	margin-left: 19px;
 }
 
+.activity-header a{
+	text-decoration: none;
+	color: black;
+}
+
+.activity-header a::before{
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
 .fbox h3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -473,10 +538,6 @@ input::placeholder {
 @media screen and (max-width: 992px) {
 
 
-	.links a:hover {
-		display: none;
-	}
-
 	.filters {
 		width: 100%;
 	}
@@ -489,7 +550,7 @@ input::placeholder {
 		flex-flow: column;
 	}
 
-	.accomodations {
+	#accomodations {
 		width: 100%;
 		margin-bottom: 50px;
 	}
@@ -530,7 +591,7 @@ input::placeholder {
 		padding: 1rem;
 	}
 
-	.search-btn .btn {
+	.search-btn span {
 		display: none;
 	}
 
@@ -623,7 +684,7 @@ input::placeholder {
 		padding: 1rem;
 	}
 
-	.accomodations {
+	#accomodations {
 		width: 100%;
 		background-color: #FFFFFF;
 		padding: 1rem;
@@ -637,10 +698,7 @@ input::placeholder {
 
 	.image img {
 		height: 124px;
-	}
-
-	.results a {
-		display: none;
+		object-fit: cover;
 	}
 
 	.left-side {
@@ -658,11 +716,7 @@ input::placeholder {
 		padding-left: 5px;
 	}
 
-	.result-box .content .stars {
-		padding-left: 7px;
-	}
-
-	.activities {
+	#activities {
 		flex-flow: column;
 		width: 100%;
 		padding: 1rem;
@@ -686,6 +740,7 @@ input::placeholder {
 
 	.activity-image img {
 		height: 134px;
+
 	}
 
 	.activity-h2 {
