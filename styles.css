@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
-
-
-
 * {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
+	padding: 0;
 	font-family: 'Raleway', sans-serif;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .page-wrapper {
 	margin: 0 auto;
 	max-width: 1400px;
-	padding: 10px;
 }
-
 
 .logo img {
 	width: 3.75rem;
@@ -26,15 +29,31 @@ body {
 }
 
 .navigation {
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+.links {
+	display: flex;
+	width: 30%;
 }
 
 .links ul {
 	display: flex;
-	padding-left: 0;
-	list-style: none;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+.search {
+	width: 90%;
+	margin: auto;
 }
 
 .search h3 {
@@ -53,15 +72,11 @@ body {
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	color: black;
-	margin: 0 1.25rem;
 	font-weight: 400;
-	padding: 0.625rem 0.313rem;
+	padding: 21px;
 }
 
-.links a:hover {
-	color: #0065FC;
-	border-top: 3px solid #0065FC;
-}
+
 
 .location-btn {
 	font-size: 1.125rem;
@@ -74,7 +89,6 @@ body {
 	cursor: pointer;
 
 }
-
 
 form {
 	display: flex;
@@ -91,7 +105,9 @@ form input::placeholder {
 .search-container {
 	display: flex;
 	flex-flow: row;
+	width: 90%;
 	justify-content: flex-start;
+	margin: auto;
 	margin-bottom: 2.5rem;
 }
 
@@ -135,10 +151,11 @@ form input::placeholder {
 .filters {
 	display: flex;
 	flex-flow: row wrap;
-	max-width: 100%;
+	width: 90%;
 	text-align: center;
 	align-items: center;
 	justify-content: flex-start;
+	margin: auto;
 }
 
 .filters p {
@@ -153,13 +170,13 @@ form input::placeholder {
 	font-weight: 700;
 	display: flex;
 	align-items: baseline;
-
 	list-style: none;
 	padding-left: 0;
 }
 
 .filters .btn {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	font-size: 1.063rem;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -170,10 +187,6 @@ form input::placeholder {
 	margin-left: 2.5rem;
 	text-align: center;
 	cursor: pointer;
-}
-
-.btn:hover {
-	background-color: #DEEBFF;
 }
 
 .btn .fa-solid {
@@ -187,10 +200,13 @@ form input::placeholder {
 	display: flex;
 	flex-flow: row;
 	align-items: center;
+	width: 90%;
 	font-family: 'Raleway', sans-serif;
+	margin: auto;
 	margin-top: 2.5rem;
 	font-size: 1rem;
 	font-weight: 400;
+
 }
 
 .info div {
@@ -216,7 +232,7 @@ form input::placeholder {
 
 #accomodations h2 {
 	margin-bottom: 0;
-	padding-left: 0.625rem;
+	padding-left: 16px;
 	font-size: 1.375rem;
 	font-weight: 700;
 	margin-bottom: 0.625rem;
@@ -240,12 +256,8 @@ form input::placeholder {
 	padding: 0.313rem;
 	margin-bottom: 20px;
 	box-shadow: 0px -2px 20px -13px rgba(145, 145, 145, 1);
-
 }
 
-.result-box:hover {
-	box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-}
 
 #accomodations a {
 	color: black;
@@ -253,8 +265,11 @@ form input::placeholder {
 	font-size: 1.125rem;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	padding-left: 10px;
 	padding-top: 1.25rem;
+}
+
+.show-more {
+	padding-left: 16px;
 }
 
 .content a::before {
@@ -264,7 +279,6 @@ form input::placeholder {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-
 }
 
 .left-side {
@@ -318,7 +332,7 @@ form input::placeholder {
 .popular {
 	border-radius: 1.25rem;
 	background-color: #F2F2F2;
-	padding: 1.25rem;
+	padding: 40px;
 	display: flex;
 	flex-flow: column;
 	width: 29%;
@@ -345,9 +359,6 @@ form input::placeholder {
 	box-shadow: 0px -2px 20px -13px rgba(145, 145, 145, 1);
 }
 
-.popular-box:hover {
-	box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-}
 
 .popular-image {
 	display: flex;
@@ -368,8 +379,7 @@ form input::placeholder {
 	height: 100%;
 	display: flex;
 	flex-flow: column;
-	justify-content: space-between;
-	margin: 25px auto;
+	justify-content: space-evenly;
 }
 
 .popular-content {
@@ -393,7 +403,6 @@ form input::placeholder {
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
-
 }
 
 .popular-box a::before {
@@ -422,9 +431,10 @@ form input::placeholder {
 }
 
 .results {
-	width: 100%;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
+	margin: auto;
 }
 
 .stars {
@@ -450,14 +460,12 @@ form input::placeholder {
 	flex-flow: column;
 	align-self: stretch;
 	align-items: stretch;
-	width: 24%;
+	width: 23%;
 	border-radius: 1.25rem;
 	box-shadow: 1px 1px 2px 1px rgba(82, 82, 82, 0.1);
 }
 
-.activity-card:hover{
-	box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-}
+
 
 .activity-image img {
 	border-top-right-radius: 1.25rem;
@@ -467,11 +475,19 @@ form input::placeholder {
 	object-fit: cover;
 }
 
+.activity-h2 {
+	width: 90%;
+	margin: auto;
+}
+
 #activities {
 	display: flex;
+	width: 90%;
+	margin: auto;
 	justify-content: space-between;
 	align-content: stretch;
 	flex-flow: row;
+
 }
 
 
@@ -482,12 +498,12 @@ form input::placeholder {
 	margin-left: 19px;
 }
 
-.activity-header a{
+.activity-header a {
 	text-decoration: none;
 	color: black;
 }
 
-.activity-header a::before{
+.activity-header a::before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -495,6 +511,7 @@ form input::placeholder {
 	bottom: 0px;
 	left: 0px;
 }
+
 .fbox h3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -520,12 +537,13 @@ form input::placeholder {
 }
 
 .footer-container {
-	margin-top: 4rem;
 	display: flex;
+	margin: auto;
+	margin-top: 4rem;
+	width: 90%;
 	justify-content: space-evenly;
 	background-color: #F2F2F2;
 	padding: 2.5rem 2.5rem 2.5rem 0;
-	margin-bottom: 0;
 	box-sizing: border-box;
 }
 
@@ -535,11 +553,45 @@ form input::placeholder {
 }
 
 
+@media  (hover: hover){
+
+	.links a:hover {
+		color: #0065FC;
+		border-top: 2px solid #0065FC;
+	}
+	.btn:hover {
+		background-color: #DEEBFF;
+		transition: 0.3s;
+	}
+
+	.location-btn:hover{
+		background-color: #d4d4d4;
+		transition: 0.3s;
+	}
+
+	.search-btn:hover{
+		background-color: #0150c7;
+		transition: 0.3s;
+	}
+
+	.result-box:hover {
+		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+		transition: 0.3s;
+	}
+	.popular-box:hover {
+		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+		transition: 0.3s;
+	}
+	.activity-card:hover {
+		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+		transition: 0.3s;
+	}
+}
+
 @media screen and (max-width: 992px) {
 
-
 	.filters {
-		width: 100%;
+		width: 90%;
 	}
 
 	.filters .btn {
@@ -547,28 +599,36 @@ form input::placeholder {
 	}
 
 	.results {
+		width: 100%;
 		flex-flow: column;
+		margin: 0;
 	}
 
 	#accomodations {
-		width: 100%;
+		width: 90%;
+		margin: auto;
 		margin-bottom: 50px;
 	}
 
+	.most-popular{
+		margin-bottom: 30px;
+	}
 	.popular {
-		width: 100%;
+		width: 90%;
+		margin: auto;
 		flex-flow: row wrap;
+		margin-bottom: 70px;
 	}
 
 	.right-side {
 		flex-flow: row wrap;
 		justify-content: space-between;
-
 	}
 
 	.popular-box {
-		width: 32%;
+		width: 31%;
 		height: 144px;
+
 	}
 
 	.activity-image img {
@@ -578,17 +638,21 @@ form input::placeholder {
 
 @media screen and (max-width: 768px) {
 
+	a{
+		pointer-events: none;
+	}
+
 	.page-wrapper {
 		margin: 0 auto;
 		padding: 0;
 	}
 
 	.navigation {
-		padding: 1rem;
+		width: 100%;
 	}
 
 	.search {
-		padding: 1rem;
+		width: 90%;
 	}
 
 	.search-btn span {
@@ -600,10 +664,15 @@ form input::placeholder {
 	}
 
 	.search-container {
-		justify-content: center;
-		margin: 0 auto;
+		justify-content: flex-start;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	form{
 		width: 100%;
-		padding: 1rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.navigation {
@@ -617,16 +686,34 @@ form input::placeholder {
 		margin-bottom: 30px;
 	}
 
+	.links ul li a{
+		display: block;
+		padding: 0;
+		color: inherit;
+	}
+
+	.links ul li{
+		width: 50%;
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	.links ul li:active{
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+
+	}
+
+
 	.links {
 		width: 100%;
 	}
 
-
 	.links ul {
 		width: 100%;
 		justify-content: space-around;
-		padding-bottom: 20px;
-		border-bottom: 3px solid #F2F2F2;
+
 	}
 
 	.filters p {
@@ -634,8 +721,7 @@ form input::placeholder {
 	}
 
 	.filters {
-		width: 100%;
-		padding: 1rem;
+		width: 90%;
 	}
 
 	.filters ul {
@@ -661,17 +747,13 @@ form input::placeholder {
 		padding-right: 5px;
 	}
 
-	.info {
-		padding: 1rem;
-	}
-
 	.results {
 		flex-flow: column-reverse;
-		width: 100%;
 	}
 
 	.right-side {
 		flex-flow: column;
+		margin-top: 30px;
 	}
 
 	.popular-box {
@@ -681,14 +763,16 @@ form input::placeholder {
 
 	.popular {
 		border-radius: 0;
-		padding: 1rem;
+		width: 100%;
+		margin-bottom: 0;
+		padding: 20px;
+		padding-bottom: 40px;
 	}
 
 	#accomodations {
 		width: 100%;
 		background-color: #FFFFFF;
-		padding: 1rem;
-
+		margin-bottom: 20px;
 	}
 
 	.left-side {
@@ -742,13 +826,17 @@ form input::placeholder {
 		height: 134px;
 
 	}
+	.show-more{
+		display: none;
+	}
 
 	.activity-h2 {
+		display: flex;
 		font-size: 22px;
-		padding-left: 1rem;
 		width: 40%;
-		margin-bottom: 0;
-		padding-bottom: 0;
+		align-self: flex-start;
+		margin: 0;
+		margin-left: 20px;
 	}
 
 	.most-popular {
