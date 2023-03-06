@@ -548,38 +548,44 @@ form input {
 }
 
 
-@media  (hover: hover){
+@media (hover: hover) {
 
 	.links a:hover {
 		color: #0065FC;
 		border-top: 2px solid #0065FC;
 	}
+
 	.btn:hover {
 		background-color: #DEEBFF;
 		transition: 0.3s;
 	}
 
-	.location-btn:hover{
+	.location-btn:hover {
 		background-color: #d4d4d4;
 		transition: 0.3s;
 	}
 
-	.search-btn:hover{
+	.search-btn:hover {
 		background-color: #0150c7;
 		transition: 0.3s;
 	}
 
-	.result-box:hover {
+	.result-box:hover{
 		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-		transition: 0.3s;
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
 	}
+
 	.popular-box:hover {
 		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-		transition: 0.3s;
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
 	}
+
 	.activity-card:hover {
 		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-		transition: 0.3s;
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
 	}
 }
 
@@ -605,9 +611,10 @@ form input {
 		margin-bottom: 50px;
 	}
 
-	.most-popular{
+	.most-popular {
 		margin-bottom: 30px;
 	}
+
 	.popular {
 		width: 90%;
 		margin: auto;
@@ -629,6 +636,35 @@ form input {
 	.activity-image img {
 		height: 211px;
 	}
+
+	.btn:focus {
+		background-color: #DEEBFF;
+		transition: 0.3s;
+
+	}
+
+	.links ul li:active {
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+		transition: 1ms;
+
+	}
+
+	 .popular-box:active{
+		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
+	}
+	.activity-card:active{
+		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
+	}
+	.result-box:active{
+		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -643,10 +679,7 @@ form input {
 		width: 100%;
 	}
 
-	.btn:focus {
-		background-color: #DEEBFF;
-		transition: 0.3s;
-	}
+
 	.search {
 		width: 90%;
 	}
@@ -659,7 +692,7 @@ form input {
 		display: inline-block;
 	}
 
-	form{
+	form {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -677,23 +710,17 @@ form input {
 		margin-bottom: 30px;
 	}
 
-	.links ul li a{
+	.links ul li a {
 		display: block;
 		padding: 0;
 		color: inherit;
 	}
 
-	.links ul li{
+	.links ul li {
 		width: 50%;
 		text-align: center;
 		padding-bottom: 20px;
 		border-bottom: 3px solid #F2F2F2;
-	}
-
-	.links ul li:active{
-		color: #0065FC;
-		border-bottom: 3px solid #0065FC;
-		transition: 1ms;
 	}
 
 
@@ -820,7 +847,8 @@ form input {
 		height: 134px;
 
 	}
-	.show-more{
+
+	.show-more {
 		display: none;
 	}
 
