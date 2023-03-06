@@ -638,9 +638,6 @@ form input::placeholder {
 
 @media screen and (max-width: 768px) {
 
-	a{
-		pointer-events: none;
-	}
 
 	.page-wrapper {
 		margin: 0 auto;
@@ -650,6 +647,7 @@ form input::placeholder {
 	.navigation {
 		width: 100%;
 	}
+
 
 	.search {
 		width: 90%;
@@ -690,6 +688,7 @@ form input::placeholder {
 		display: block;
 		padding: 0;
 		color: inherit;
+		pointer-events: none;
 	}
 
 	.links ul li{
@@ -702,7 +701,7 @@ form input::placeholder {
 	.links ul li:active{
 		color: #0065FC;
 		border-bottom: 3px solid #0065FC;
-
+		transition: 1ms;
 	}
 
 
@@ -718,6 +717,7 @@ form input::placeholder {
 
 	.filters p {
 		text-align: left;
+
 	}
 
 	.filters {
@@ -737,7 +737,7 @@ form input::placeholder {
 
 	.filters .btn {
 		margin-left: 0;
-		font-size: 11px;
+		font-size: 15px;
 		margin-bottom: 10px;
 		width: 100%;
 	}
