@@ -38,7 +38,6 @@ li {
 	margin-bottom: 50px;
 }
 
-
 .links {
 	display: flex;
 	width: 30%;
@@ -53,7 +52,8 @@ li {
 
 .search {
 	width: 90%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .search h3 {
@@ -85,7 +85,6 @@ li {
 	border-top-left-radius: 0.938rem;
 	border-bottom-left-radius: 0.938rem;
 	cursor: pointer;
-
 }
 
 form input::placeholder {
@@ -103,7 +102,7 @@ form {
 	justify-content: flex-start;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2.5rem;
+	margin-bottom: 20px;
 }
 
 form input {
@@ -198,14 +197,13 @@ form input {
 	width: 90%;
 	font-family: 'Raleway', sans-serif;
 	margin: auto;
-	margin-top: 2.5rem;
+	margin-top: 20px;
 	font-size: 1rem;
 	font-weight: 400;
-
+	margin-bottom: 20px;
 }
 
 .info div {
-	display: block;
 	color: #0065FC;
 	text-align: center;
 	border: 1px solid #d9d9d9;
@@ -254,7 +252,6 @@ form input {
 	transition: all 0.3s ease;
 
 }
-
 
 #accomodations a {
 	color: black;
@@ -358,7 +355,6 @@ form input {
 
 }
 
-
 .popular-image {
 	display: flex;
 	justify-content: center;
@@ -433,7 +429,9 @@ form input {
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
 }
 
 .stars {
@@ -463,7 +461,6 @@ form input {
 	border-radius: 1.25rem;
 	box-shadow: 1px 1px 2px 1px rgba(82, 82, 82, 0.1);
 	transition: all 0.3s ease;
-
 }
 
 .activity-image img {
@@ -550,13 +547,11 @@ form input {
 	padding-left: 1.5rem;
 }
 
+.links a:hover, .links a:active{
+	color: #0065FC;
+	border-top: 2px solid #0065FC;
+}
 
-@media (hover: hover) {
-
-	.links a:hover {
-		color: #0065FC;
-		border-top: 2px solid #0065FC;
-	}
 
 	.btn:hover {
 		background-color: #DEEBFF;
@@ -575,19 +570,20 @@ form input {
 
 	.result-box:hover {
 		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-		transform: scale(1.01);
+		transform: scale(1.02);
 	}
 
 	.popular-box:hover {
 		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-		transform: scale(1.01);
+		transform: scale(1.02);
 	}
 
 	.activity-card:hover {
 		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-		transform: scale(1.01);
+		transform: scale(1.02);
 	}
-}
+
+
 
 @media screen and (max-width: 992px) {
 
@@ -636,35 +632,9 @@ form input {
 	.activity-image img {
 		height: 211px;
 	}
-
-	.btn:focus {
-		background-color: #DEEBFF;
-		transition: 0.3s;
-
-	}
-
-	.links ul li:active {
-		color: #0065FC;
-		border-bottom: 3px solid #0065FC;
-		transition: 1ms;
-
-	}
-
-	.popular-box:active {
-		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-	}
-
-	.activity-card:active {
-		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-	}
-
-	.result-box:active {
-		box-shadow: 0px -2px 20px -1px rgba(145, 145, 145, 1);
-	}
 }
 
 @media screen and (max-width: 768px) {
-
 
 	.page-wrapper {
 		margin: 0 auto;
@@ -674,7 +644,6 @@ form input {
 	.navigation {
 		width: 100%;
 	}
-
 
 	.search {
 		width: 90%;
@@ -710,15 +679,15 @@ form input {
 		display: block;
 		padding: 0;
 		color: inherit;
+		border-bottom: 3px solid #F2F2F2;
+		padding-bottom: 20px;
 	}
 
 	.links ul li {
 		width: 50%;
 		text-align: center;
-		padding-bottom: 20px;
-		border-bottom: 3px solid #F2F2F2;
-	}
 
+	}
 
 	.links {
 		width: 100%;
@@ -871,6 +840,17 @@ form input {
 		display: flex;
 		flex-flow: row;
 		align-items: center;
+	}
+
+	/* .links ul li:hover {
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+		transition: 1ms;
+	} */
+
+	.links a:hover, .links a:active{
+		border: none;
+		border-bottom: 2px solid #0065FC;
 	}
 
 }
