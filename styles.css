@@ -226,7 +226,7 @@ form input {
 #accomodations h2 {
 	margin-bottom: 0;
 	padding-left: 16px;
-	font-size: 1.375rem;
+	font-size: 22px;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
@@ -338,18 +338,19 @@ form input {
 	align-items: center;
 	margin-bottom: 20px;
 	padding: 0;
+
 }
 
 .most-popular h2 {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
-	font-size: 1.35rem;
+	font-size: 22px;
 	font-weight: 700;
 }
 
 .most-popular .fa-chart-line {
 	color: #0065FC;
-	font-size: 1.35rem;
+	font-size: 22px;
 }
 
 .popular-box {
@@ -467,6 +468,9 @@ form input {
 	width: 90%;
 	margin: auto;
 }
+.activity-h2 h3{
+	font-size: 22px;
+}
 
 #activities {
 	display: flex;
@@ -483,6 +487,9 @@ form input {
 	font-size: 1rem;
 	font-weight: 700;
 	margin-left: 19px;
+}
+.activity-header h2{
+	font-size: 16px;
 }
 
 .activity-header a {
@@ -800,7 +807,6 @@ form input {
 
 	.activity-h2 {
 		display: flex;
-		font-size: 22px;
 		width: 60%;
 		align-self: flex-start;
 		margin: 0;
