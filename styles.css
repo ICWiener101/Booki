@@ -312,11 +312,11 @@ form input {
 .stars {
 	display: flex;
 	color: #0065FC;
-	margin-top: 5px;
 	margin-left: 0;
 	margin-bottom: 0;
 	list-style: none;
-	padding-left: 0.625rem;
+	padding-left: 0;
+	margin-top: 0;
 }
 
 .last-star {
@@ -432,11 +432,6 @@ form input {
 	margin-bottom: 50px;
 }
 
-.stars {
-	color: #0065FC;
-	padding-left: 0;
-	margin-top: 0;
-}
 
 .most-popular li:first-child {
 	font-family: 'Raleway', sans-serif;
@@ -584,10 +579,6 @@ form input {
 
 @media screen and (max-width: 992px) {
 
-	.filters {
-		width: 90%;
-	}
-
 	.filters .btn {
 		margin-left: 1rem;
 	}
@@ -623,7 +614,6 @@ form input {
 	.popular-box {
 		width: 31%;
 		height: 144px;
-
 	}
 
 	.activity-image img {
@@ -711,7 +701,6 @@ form input {
 		font-size: 15px;
 		margin-bottom: 10px;
 		width: 100%;
-		height: 50px;
 		text-align: left;
 	}
 
