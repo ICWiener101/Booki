@@ -672,8 +672,12 @@ form input {
 		overflow: hidden;
 	}
 
+	form input{
+		max-width: 80%;
+	}
+
 	form {
-		width: auto;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 		justify-content: center;
@@ -819,9 +823,4 @@ form input {
 		border-bottom: 2px solid #0065FC;
 	}
 
-	@media screen and (max-width: 340px){
-		form input{
-			max-width: 200px;
-		}
-	}
 }
